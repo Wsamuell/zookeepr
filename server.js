@@ -29,7 +29,7 @@ if (query.name) {
 return filteredResults;
 }
 app.get('/api/animals/:id', (req, res) => {
-    const results = findById(req.params.id, animals);
+    const result = findById(req.params.id, animals);
     if (result) {
         res.json(result);
     } else {
