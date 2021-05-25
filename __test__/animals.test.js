@@ -77,6 +77,6 @@ test("validates personality traits", () => {
     const result = validateAnimal(animal);
     const result2 = validateAnimal(invalidAnimal);
   
-    expect(result).toBe(false);
+    expect(result).toBe(true);
     expect(result2).toBe(false);
   });
